@@ -18,5 +18,5 @@ class CPP_TUTORIAL_API ATankPlayerController : public APlayerController
 public:
 	ATank* GetControlledTank() const;
 	
-	
+	virtual void BeginPlay() override;
 };

@@ -13,3 +13,4 @@ Tutorial CPP Battle Tanks
 * 08 - Added Main Menu
 * 09 - Added Menu functionality
 * 10 - Added TankPlayerController Class - first cpp class
+* 11 - Added Tank possession log - first pointer
