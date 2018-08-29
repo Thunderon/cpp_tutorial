@@ -15,3 +15,4 @@ Tutorial CPP Battle Tanks
 * 10 - Added TankPlayerController Class - first cpp class
 * 11 - Added Tank possession log - first pointer
 * 12 - Added AI Tank Controller
+* 13 - Added tick to Tank Player Controller
