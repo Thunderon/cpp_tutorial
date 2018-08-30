@@ -16,3 +16,4 @@ Tutorial CPP Battle Tanks
 * 11 - Added Tank possession log - first pointer
 * 12 - Added AI Tank Controller
 * 13 - Added tick to Tank Player Controller
+* 14 - Finished aiming system and added tank aiming component
