@@ -19,3 +19,4 @@ Tutorial CPP Battle Tanks
 * 14 - Finished aiming system and added tank aiming component
 * 15 - Corrected BattleGround.umap file
 * 16 - Added barrel location to aiming component
+* 17 - Added barrel class
