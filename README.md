@@ -20,3 +20,4 @@ Tutorial CPP Battle Tanks
 * 15 - Corrected BattleGround.umap file
 * 16 - Added barrel location to aiming component
 * 17 - Added barrel class
+* 18 - Added barrel pitch rotator
