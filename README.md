@@ -22,3 +22,4 @@ Tutorial CPP Battle Tanks
 * 17 - Added barrel class
 * 18 - Added barrel pitch rotator
 * 19 - Added turret rotation and projectile blueprint and cpp
+* 20 - Added basic tank movement
