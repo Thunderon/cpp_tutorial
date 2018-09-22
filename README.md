@@ -24,3 +24,4 @@ Tutorial CPP Battle Tanks
 * 19 - Added turret rotation and projectile blueprint and cpp
 * 20 - Added basic tank movement
 * 21 - Added gamepad stick movement
+* 22 - Added different crosshair color for different states
