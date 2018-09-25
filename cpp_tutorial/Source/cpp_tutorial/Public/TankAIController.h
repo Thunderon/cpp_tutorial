@@ -11,10 +11,15 @@
  * 
  */
 class ATank;
+class UTankAimingComponent;
+
 UCLASS()
 class CPP_TUTORIAL_API ATankAIController : public AAIController
 {
 	GENERATED_BODY()
+protected:
+
+	UTankAimingComponent* GetAimingController() const;
 	
 private:
 	virtual void BeginPlay() override;

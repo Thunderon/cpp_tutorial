@@ -6,7 +6,11 @@
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h"		//must be the last include
 
-class ATank;
+class UTankAimingComponent;
+
+/**
+* Responsible for helping the player aim.
+*/
 UCLASS()
 class CPP_TUTORIAL_API ATankPlayerController : public APlayerController
 {
@@ -18,8 +22,10 @@ class CPP_TUTORIAL_API ATankPlayerController : public APlayerController
 
 protected:
 
-	UFUNCTION(BlueprintCallable, Category = "Setup")
-	ATank* GetControlledTank() const;
+	UFUNCTION(BlueprintImplementableEvent, Category = "Setup")
+	void FoundAimingComponent(UTankAimingComponent * AimCompRef);
+
+	UTankAimingComponent* GetAimingController() const;
 
 private:
 	
