@@ -29,7 +29,9 @@ void ATankAIController::Tick(float DeltaTime)
 		// Aim towards the player
 		GetAimingController()->AimAt(PlayerTank->GetActorLocation());
 
-		//TODO fix fire
-		//ControlledTank->Fire(); //TODO limit firing rate
+		if(GetAimingController()->GetFiringState() == EFiringStatus::Locked)
+		{
+			GetAimingController()->Fire(); //TODO limit firing rate
+		}
 	}
 }
