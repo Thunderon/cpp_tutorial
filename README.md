@@ -27,3 +27,4 @@ Tutorial CPP Battle Tanks
 * 22 - Added different crosshair color for different states
 * 23 - Code refactoring in progress - decoupling tank class
 * 24 - Tweaked tank AI
+* 25 - Added AutoMortar and tweaked UI

@@ -14,6 +14,14 @@ enum class EFiringStatus : uint8
 	Locked
 };
 
+
+UENUM()
+enum class EAmmunitionStatus : uint8
+{
+	Available,
+	OutOfAmmo
+};
+
 //Forward declaration
 class UTankBarrel;
 class UTankTurret;
@@ -40,8 +48,14 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
 	EFiringStatus FiringState = EFiringStatus::Reloading;
 
+	UPROPERTY(BlueprintReadOnly, Category = "State")
+	EAmmunitionStatus AmmoState = EAmmunitionStatus::Available;
+
 	UFUNCTION(BlueprintCallable, Category = "Ticking")
 	void ChangeCrosshairColor();
+
+	UPROPERTY(BlueprintReadOnly, Category = "Firing")
+	int32 ActualAmmo;
 
 	EFiringStatus GetFiringState() const;
 protected:
@@ -56,6 +70,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 	float LaunchSpeed = 4000;
+
+	UPROPERTY(EditAnywhere, Category = "Firing")
+	int32 StartingAmmunition = 3;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	TSubclassOf<AProjectile> ProjectileBlueprint;
