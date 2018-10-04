@@ -28,3 +28,4 @@ Tutorial CPP Battle Tanks
 * 23 - Code refactoring in progress - decoupling tank class
 * 24 - Tweaked tank AI
 * 25 - Added AutoMortar and tweaked UI
+* 26 - Added particle when shooting
